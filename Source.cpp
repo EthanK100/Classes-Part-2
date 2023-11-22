@@ -58,7 +58,27 @@ int main()
 	carObj.displayInfo();
 	cout << endl;
 
+	//gets information from the user to store into a truck object
+	Truck truckObj;
 
+	cout << "Please enter information for a truck below." << endl;
+	cout << "Enter the truck manufacturer: ";
+	cin.ignore(1);
+	getline(cin, vehicleManufacturer);
+	truckObj.setManufacturer(vehicleManufacturer);
+
+	cout << "Enter the year the truck was built: ";
+	cin >> vehicleYear;
+	truckObj.setYear(vehicleYear);
+
+	cout << "Enter the tow capacity of the truck measured in kilograms: ";
+	cin >> towCapacity;
+	truckObj.setTowCapacity(towCapacity);
+
+	//displays the information of the truck
+	cout << endl << "Here is the information on the truck:" << endl;
+	truckObj.displayInfo();
+	cout << endl;
 
 	return 0;
 }
