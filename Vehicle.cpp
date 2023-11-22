@@ -25,3 +25,15 @@ Vehicle::Vehicle(int Y, string M) // constructor that sets up the member variabl
 	Vehicle::setYear(Y);
 	Vehicle::setManufacturer(M);
 }
+
+Vehicle::Vehicle() // defualt constructor to populate member variables with default values
+{
+	setYear(0);
+	setManufacturer("unknown");
+}
+
+void Vehicle::displayInfo() // displays the info about the vehicle
+{
+	cout << "Manufacturer: " << manufacturer << endl;
+	cout << "Year: " << year << endl;
+}

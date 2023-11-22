@@ -2,6 +2,7 @@
 #ifndef VEHICLE_H
 #define VEHICLE_H
 #include<string>
+#include<iostream>
 
 using namespace std;
 
@@ -14,7 +15,8 @@ private:
 	
 public:
 
-	//constructor
+	//constructors
+	Vehicle(); // default constructor
 	Vehicle(int Y, string M);
 	
 	//setters
@@ -24,6 +26,9 @@ public:
 	//getters
 	int getYear();
 	string getManufacturer();
+
+	//other member function
+	void displayInfo();
 
 };
 #endif
